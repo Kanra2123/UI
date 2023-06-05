@@ -20,6 +20,11 @@ public class controller : MonoBehaviour
     [SerializeField] private float addXpAmount = 10;
     [SerializeField] private float subXpAmount = -10;
 
+    void Update()
+    {
+        
+    }
+
     public void addHP()
     {
         changeFill(healAmount, hpFill);
