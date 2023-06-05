@@ -10,17 +10,40 @@ public class controller : MonoBehaviour
     [SerializeField] private List <Sprite> monk;
     [SerializeField] private List <Sprite> demonHunter;
     [SerializeField] private List <Sprite> barbarian;
+    [SerializeField] private Image hpFill;
+    [SerializeField] private Image xpFill;
+    [SerializeField] private Image manaFill;
+    [SerializeField] private float healAmount = 10;
+    [SerializeField] private float dmgAmount = -10;
+    [SerializeField] private float addManaAmount = 10;
+    [SerializeField] private float subManaAmount = -10;
+    [SerializeField] private float addXpAmount = 10;
+    [SerializeField] private float subXpAmount = -10;
 
-    void Start()
+    public void addHP()
     {
-        
+        changeFill(healAmount, hpFill);
     }
-
-    void Update()
+    public void subHP()
     {
-
+        changeFill(dmgAmount, hpFill);
     }
-
+    public void addMana()
+    {
+        changeFill(addManaAmount, manaFill);
+    }
+    public void subMana()
+    {
+        changeFill(subManaAmount, manaFill);
+    }
+    public void addXp()
+    {
+        changeFill(addXpAmount, xpFill);
+    }
+    public void subXp()
+    {
+        changeFill(subXpAmount, xpFill);
+    }
     public void setMonkSkills()
     {
         UpdateSkills(monk);
@@ -32,6 +55,22 @@ public class controller : MonoBehaviour
     public void setBarbarianSkills()
     {
         UpdateSkills(barbarian);
+    }
+
+    private void changeFill(float number, Image fill)
+    {
+        if ((fill.fillAmount + (number / 100)) >= 0 && (fill.fillAmount + (number / 100)) <= 100)
+        {
+            fill.fillAmount += number / 100;
+        }
+        else if ((hpFill.fillAmount + (number / 100)) < 0)
+        {
+            fill.fillAmount = 0;
+        }
+        else if ((fill.fillAmount + (number / 100)) > 100)
+        {
+            fill.fillAmount = 1;
+        }
     }
 
     private void UpdateSkills (List <Sprite> skillImages)
