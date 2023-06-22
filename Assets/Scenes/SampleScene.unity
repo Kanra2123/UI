@@ -269,6 +269,7 @@ GameObject:
   - component: {fileID: 110184459}
   - component: {fileID: 110184458}
   - component: {fileID: 110184457}
+  - component: {fileID: 110184460}
   m_Layer: 5
   m_Name: skill0
   m_TagString: Untagged
@@ -340,7 +341,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 110184458}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 110184460}
+        m_TargetAssemblyTypeName: cooldown_anim, Assembly-CSharp
+        m_MethodName: StartCooldown
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &110184458
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -379,6 +392,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 110184455}
   m_CullTransparentMesh: 1
+--- !u!114 &110184460
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 110184455}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eae6e35c2396158448709ffdc8f95e5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  image: {fileID: 1421987435}
 --- !u!1 &117429687
 GameObject:
   m_ObjectHideFlags: 0
@@ -758,6 +784,7 @@ GameObject:
   - component: {fileID: 191981178}
   - component: {fileID: 191981177}
   - component: {fileID: 191981176}
+  - component: {fileID: 191981179}
   m_Layer: 5
   m_Name: skill4
   m_TagString: Untagged
@@ -829,7 +856,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 191981177}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 191981179}
+        m_TargetAssemblyTypeName: cooldown_anim, Assembly-CSharp
+        m_MethodName: StartCooldown
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &191981177
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -868,6 +907,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 191981174}
   m_CullTransparentMesh: 1
+--- !u!114 &191981179
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 191981174}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eae6e35c2396158448709ffdc8f95e5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  image: {fileID: 1523379723}
 --- !u!1 &214748881
 GameObject:
   m_ObjectHideFlags: 0
@@ -1231,6 +1283,7 @@ GameObject:
   - component: {fileID: 239714412}
   - component: {fileID: 239714411}
   - component: {fileID: 239714410}
+  - component: {fileID: 239714413}
   m_Layer: 5
   m_Name: potion
   m_TagString: Untagged
@@ -1302,7 +1355,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 239714411}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 239714413}
+        m_TargetAssemblyTypeName: cooldown_anim, Assembly-CSharp
+        m_MethodName: StartCooldown
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &239714411
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1341,6 +1406,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 239714408}
   m_CullTransparentMesh: 1
+--- !u!114 &239714413
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 239714408}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eae6e35c2396158448709ffdc8f95e5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  image: {fileID: 1915787641}
 --- !u!1 &247959514
 GameObject:
   m_ObjectHideFlags: 0
@@ -1480,7 +1558,7 @@ MonoBehaviour:
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
-  m_FillAmount: 0.127
+  m_FillAmount: 0
   m_FillClockwise: 0
   m_FillOrigin: 2
   m_UseSpriteMesh: 0
@@ -1781,7 +1859,7 @@ MonoBehaviour:
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
-  m_FillAmount: 0.749
+  m_FillAmount: 0
   m_FillClockwise: 0
   m_FillOrigin: 2
   m_UseSpriteMesh: 0
@@ -2519,7 +2597,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 4.15
+  m_fontSize: 4.35
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -3213,6 +3291,7 @@ GameObject:
   - component: {fileID: 815430634}
   - component: {fileID: 815430633}
   - component: {fileID: 815430632}
+  - component: {fileID: 815430635}
   m_Layer: 5
   m_Name: skill5
   m_TagString: Untagged
@@ -3284,7 +3363,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 815430633}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 815430635}
+        m_TargetAssemblyTypeName: cooldown_anim, Assembly-CSharp
+        m_MethodName: StartCooldown
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &815430633
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3323,6 +3414,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 815430630}
   m_CullTransparentMesh: 1
+--- !u!114 &815430635
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 815430630}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eae6e35c2396158448709ffdc8f95e5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  image: {fileID: 441994844}
 --- !u!1 &820324432
 GameObject:
   m_ObjectHideFlags: 0
@@ -3529,7 +3633,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 4.15
+  m_fontSize: 4.35
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -3664,7 +3768,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 4.15
+  m_fontSize: 4.35
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -3726,6 +3830,7 @@ GameObject:
   - component: {fileID: 925194244}
   - component: {fileID: 925194243}
   - component: {fileID: 925194242}
+  - component: {fileID: 925194245}
   m_Layer: 5
   m_Name: skill2
   m_TagString: Untagged
@@ -3797,7 +3902,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 925194243}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 925194245}
+        m_TargetAssemblyTypeName: cooldown_anim, Assembly-CSharp
+        m_MethodName: StartCooldown
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &925194243
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3836,6 +3953,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 925194240}
   m_CullTransparentMesh: 1
+--- !u!114 &925194245
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 925194240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eae6e35c2396158448709ffdc8f95e5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  image: {fileID: 1220076946}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -4050,7 +4180,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 4.15
+  m_fontSize: 4.35
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -4163,7 +4293,7 @@ MonoBehaviour:
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
-  m_FillAmount: 0.288
+  m_FillAmount: 0
   m_FillClockwise: 0
   m_FillOrigin: 2
   m_UseSpriteMesh: 0
@@ -4322,6 +4452,7 @@ GameObject:
   - component: {fileID: 1266396660}
   - component: {fileID: 1266396659}
   - component: {fileID: 1266396658}
+  - component: {fileID: 1266396661}
   m_Layer: 5
   m_Name: skill3
   m_TagString: Untagged
@@ -4393,7 +4524,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1266396659}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1266396661}
+        m_TargetAssemblyTypeName: cooldown_anim, Assembly-CSharp
+        m_MethodName: StartCooldown
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1266396659
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4432,6 +4575,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1266396656}
   m_CullTransparentMesh: 1
+--- !u!114 &1266396661
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1266396656}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eae6e35c2396158448709ffdc8f95e5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  image: {fileID: 2034711356}
 --- !u!1 &1272829514
 GameObject:
   m_ObjectHideFlags: 0
@@ -4593,7 +4749,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 4.15
+  m_fontSize: 4.35
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -5348,6 +5504,7 @@ GameObject:
   - component: {fileID: 1409499213}
   - component: {fileID: 1409499212}
   - component: {fileID: 1409499211}
+  - component: {fileID: 1409499214}
   m_Layer: 5
   m_Name: skill1
   m_TagString: Untagged
@@ -5419,7 +5576,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1409499212}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1409499214}
+        m_TargetAssemblyTypeName: cooldown_anim, Assembly-CSharp
+        m_MethodName: StartCooldown
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1409499212
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5458,6 +5627,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1409499209}
   m_CullTransparentMesh: 1
+--- !u!114 &1409499214
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1409499209}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eae6e35c2396158448709ffdc8f95e5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  image: {fileID: 281692229}
 --- !u!1 &1414620708
 GameObject:
   m_ObjectHideFlags: 0
@@ -5568,7 +5750,7 @@ MonoBehaviour:
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
-  m_FillAmount: 0.127
+  m_FillAmount: 0
   m_FillClockwise: 0
   m_FillOrigin: 2
   m_UseSpriteMesh: 0
@@ -6125,7 +6307,7 @@ MonoBehaviour:
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
-  m_FillAmount: 0.155
+  m_FillAmount: 0
   m_FillClockwise: 0
   m_FillOrigin: 2
   m_UseSpriteMesh: 0
@@ -6890,7 +7072,7 @@ MonoBehaviour:
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
-  m_FillAmount: 0.244
+  m_FillAmount: 0
   m_FillClockwise: 0
   m_FillOrigin: 2
   m_UseSpriteMesh: 0
@@ -7015,7 +7197,7 @@ MonoBehaviour:
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
-  m_FillAmount: 0.412
+  m_FillAmount: 0
   m_FillClockwise: 0
   m_FillOrigin: 2
   m_UseSpriteMesh: 0
